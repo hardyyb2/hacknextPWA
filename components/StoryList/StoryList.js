@@ -3,7 +3,7 @@ import classes from '../../public/styles/component/storylist.module.scss'
 
 const StoryList = ({ stories }) => {
     return (
-        <div className={classes.story_list}>
+        <div className={classes.story_list} >
             {
                 stories.map((story, index) => {
                     return story.title && story.url ?

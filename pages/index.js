@@ -11,7 +11,8 @@ import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 
 const Home = ({ stories, page, totalPages }) => {
-    // console.log(stories)
+
+
     return (
         <Layout title='HackerNext' description='A news compilation'>
             <div className={classes.header}>
