@@ -1,0 +1,30 @@
+.header{
+    background:#263238;
+    color:#ffff;
+    text-decoration: none;
+    padding:20px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+}
+
+.footer {
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    background:white ;
+    margin-top: 20px;
+    a{
+        text-decoration:none;
+        font-weight:bolder;
+        color:#e65100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       &.prev{
+            margin-right:80px;
+        }
+    }
+}

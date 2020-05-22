@@ -13,9 +13,9 @@ const Layout = ({ children, title, description }) => {
     const [showScroll, setShowScroll] = useState(false)
 
     const handleScroll = e => {
-        if (!showScroll && window.pageYOffset > 400) {
+        if (!showScroll && window.pageYOffset > 300) {
             setShowScroll(true)
-        } else if (showScroll && window.pageYOffset <= 400) {
+        } else if (showScroll && window.pageYOffset <= 300) {
             setShowScroll(false)
         }
     }

@@ -8,10 +8,18 @@ import classes from '../public/styles/pages/index.module.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretLeft, faCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { useEffect } from 'react'
 
 
 const Home = ({ stories, page, totalPages }) => {
 
+    useEffect(() => {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(() => console.log('registered'))
+                .catch(err => console.log(err))
+        }
+    }, [])
 
     return (
         <Layout title='HackerNext' description='A news compilation'>

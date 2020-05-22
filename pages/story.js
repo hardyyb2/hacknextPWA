@@ -6,7 +6,6 @@ import classes from '../public/styles/pages/story.module.scss'
 import Link from 'next/link'
 
 const Story = ({ comments, storyDetails }) => {
-    console.log(storyDetails)
     return (
         <Layout title={'story'} description='Individual stories comments'>
             <div className={classes.story}>

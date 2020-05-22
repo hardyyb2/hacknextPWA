@@ -1,0 +1,43 @@
+.story_list{
+    padding:0 1em;    
+    width:80%;
+    margin: auto;
+    margin-top: 20px;
+    .story{
+        padding:1em 0;
+        box-shadow:0 6px 6px rgba(0,0,0,0.23); 
+        border-radius: 10px;;       
+        padding: 20px;
+        margin-bottom: 12px;
+        background: white;
+        .story_title{
+            font-size:1rem;
+            font-weight:700;
+            margin:0;
+            margin-bottom:0.5em;
+            a{
+                color:#333;
+                text-decoration:none;
+                display:block;
+                overflow:hidden;
+                text-overflow:ellipsis;
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+        .story_details{
+            padding-left: 5px;;
+            span{
+                margin-right:1em;
+            }
+            a{
+                color:#e65100;
+                text-decoration:none;
+                &:hover{
+                    text-decoration:underline;
+                }
+            }
+        }
+    }
+}
