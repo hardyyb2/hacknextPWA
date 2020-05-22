@@ -64,7 +64,7 @@ Home.getInitialProps = async ({ req, res, query }) => {
     let stories, page, totalPages = 0
     try {
         page = parseInt(query.page) || 1
-        let res = await axios.get(`http://hn.algolia.com/api/v1/search?page=${page}`)
+        let res = await axios.get(`https://hn.algolia.com/api/v1/search?page=${page}`)
         totalPages = res.data.nbPages
         stories = res.data.hits
     } catch (error) {
